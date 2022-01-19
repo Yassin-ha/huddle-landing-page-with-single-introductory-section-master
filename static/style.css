@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2em 2em 2em 3em;
+}
+header {
+    display: flex;
+    min-height: 10vh;
+    padding-top: 20px;
+}
+header img {
+    width: 200px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    min-height: 75vh;
+    width: 100%;
+    padding-top: 70px;
+}
+section .image {
+    width: 70%;
+}
+section .image img {
+    width: 100%;
+}
+section .text {
+    width: 50%;
+    padding: 3em 2em 0em 3em;
+}
+section .text h1 {
+    font-size: 2.5em;
+}
+section .text p {
+    padding-top: 20px;
+    line-height: 1.7;
+    color: hsl(0deg 0% 81%);
+}
+section .text button {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(257, 40%, 49%);
+    border: white;
+    box-shadow: 5px 5px 4px 0px #00000047;
+    cursor: pointer;
+}
+section .text button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 6vh;
+}
+footer .social-media i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 5px;
+    max-height: 50px;
+    max-width: 50px;
+    cursor: pointer;
+}
+footer .social-media i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-size: cover;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 1.5em;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    header img {
+        width: 150px;
+    }
+
+    section .image {
+        width: 100%;
+    }
+    section .text {
+        width: 100%;
+        padding: 2em 0em 1em 0em;
+        text-align: center;
+    }
+    section .text h1 {
+        font-size: 1.5em;
+        padding: 0em 1em;
+    }
+    button {
+        height: 40px;
+        font-size: 15px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    footer .social-media i {
+        height: 30px;
+        width: 30px;
+        padding: 7px;
+    }
+}
